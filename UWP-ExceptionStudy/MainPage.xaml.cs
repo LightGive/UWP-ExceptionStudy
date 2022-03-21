@@ -22,9 +22,34 @@ namespace UWP_ExceptionStudy
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        const string CharPlus = "+";
+        string _inputStr;
+
         public MainPage()
         {
             this.InitializeComponent();
+            _inputStr = "";
         }
-    }
+
+		private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+		{
+            _inputStr = sender.ToString();
+		}
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            textBlock.Text = Calc().ToString();
+            Console.WriteLine("クリックされた");
+        }
+        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+        int Calc()
+        {
+            Console.WriteLine("Calc");
+            var split = textBlock.Text.Split(CharPlus);
+            return 0;
+        }
+
+	}
 }

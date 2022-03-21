@@ -6,9 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignWidth="1335" d:DesignHeight="919">
 
-    <Grid>
+	<Grid Margin="0,0,10,10">
+		<TextBox x:Name="textBox" HorizontalAlignment="Left" Height="71" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="533" FontFamily="Yu Gothic UI" FontSize="36" TextChanged="textBox_TextChanged" Margin="278,0,0,0"/>
+		<Button x:Name="button" Content="計算" Height="71" Margin="871,0,0,0" Width="175" FontSize="36" FontFamily="Yu Gothic UI" Click="button_Click"/>
+		<TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="52" Margin="278,524,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" FontSize="36" SelectionChanged="textBlock_SelectionChanged" Foreground="Red" FontFamily="Yu Gothic"/>
 
-    </Grid>
+	</Grid>
 </Page>
