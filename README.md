@@ -1,2 +1,2 @@
 # UWP-ExceptionStudy
-自分用
+for myself
